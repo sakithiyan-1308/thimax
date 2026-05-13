@@ -79,29 +79,29 @@ const Hero: React.FC = () => {
           className="flex flex-col gap-6 pointer-events-auto"
         >
           <motion.div variants={slideLeft} className="flex items-center gap-2">
-            <div className="h-px w-10 bg-electric"></div>
-            <span className="text-electric font-mono text-sm uppercase tracking-widest px-4 py-1.5 rounded-full border border-electric/30 bg-electric/10 shadow-[0_0_15px_rgba(59,130,246,0.3)]">
+            <div className="h-px w-8 bg-electric"></div>
+            <span className="text-electric font-mono text-xs uppercase tracking-widest px-3 py-1 rounded-full border border-electric/30 bg-electric/10 shadow-[0_0_15px_rgba(59,130,246,0.3)]">
               Hub-and-Spoke Agentic SaaS
             </span>
           </motion.div>
 
-          <motion.h1 variants={slideLeft} className="text-6xl md:text-8xl font-black text-white leading-[1.0] tracking-tighter">
+          <motion.h1 variants={slideLeft} className="text-4xl md:text-6xl font-bold text-white leading-[1.1] tracking-tight">
             Stop Losing Revenue<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-deepPurple to-electric">
               to Manual Work.
             </span>
           </motion.h1>
 
-          <motion.p variants={fadeUp} className="text-gray-200 text-xl md:text-2xl max-w-xl leading-relaxed font-medium">
+          <motion.p variants={fadeUp} className="text-gray-300 text-lg md:text-xl max-w-lg leading-relaxed">
             THIMAX deploys AI agents that handle lead qualification, GST filing, scheduling, and follow-ups — so Indian SMEs can focus on growth, not paperwork.
           </motion.p>
 
           {/* Stats row */}
-          <motion.div variants={staggerContainer} className="flex gap-10 mt-2">
+          <motion.div variants={staggerContainer} className="flex gap-6 mt-2">
             {STATS.map((s) => (
               <motion.div key={s.label} variants={popIn} className="flex flex-col">
-                <span className="text-white font-black text-3xl">{s.value}</span>
-                <span className="text-gray-500 text-xs font-mono uppercase tracking-wider mt-1">{s.label}</span>
+                <span className="text-white font-bold text-xl">{s.value}</span>
+                <span className="text-gray-500 text-xs font-mono uppercase tracking-wider">{s.label}</span>
               </motion.div>
             ))}
           </motion.div>
@@ -111,10 +111,10 @@ const Hero: React.FC = () => {
               href="#products"
               whileHover={{ scale: 1.04, boxShadow: '0 0 30px #3b82f6' }}
               whileTap={{ scale: 0.96 }}
-              className="group relative px-7 py-4 uppercase rounded-xl text-lg font-bold text-white/60 bg-transparent cursor-pointer border border-white/50 transition-all duration-500 hover:text-white hover:bg-electric hover:border-electric"
+              className="group relative px-5 py-2.5 uppercase rounded-lg text-[17px] font-medium text-white/50 bg-transparent cursor-pointer border border-white/50 transition-all duration-500 hover:text-white hover:bg-electric hover:border-electric"
             >
               <span className="relative z-10 flex items-center gap-2">
-                See Our Products <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                See Our Products <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </span>
             </motion.a>
 
@@ -124,9 +124,9 @@ const Hero: React.FC = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.96 }}
-              className="px-7 py-4 border border-white/20 text-white font-semibold text-lg rounded-xl hover:border-white/50 hover:bg-white/5 transition-all flex items-center gap-2 backdrop-blur-sm"
+              className="px-6 py-3 border border-white/20 text-white font-mono rounded-lg hover:border-white/50 hover:bg-white/5 transition-all flex items-center gap-2 backdrop-blur-sm"
             >
-              <Zap size={20} className="text-electric" />
+              <Zap size={18} className="text-electric" />
               Get a Free Audit
             </motion.a>
           </motion.div>
