@@ -11,7 +11,7 @@ const spokes = [
 
 const Architecture: React.FC = () => {
   return (
-    <section className="relative py-32 px-3 md:px-6 flex flex-col items-center justify-center gap-20">
+    <section className="relative py-32 px-6 md:px-16 flex flex-col items-center justify-center gap-20">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

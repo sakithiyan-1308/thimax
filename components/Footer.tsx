@@ -4,7 +4,7 @@ import { fadeUp, slideLeft, slideRight, staggerContainer, viewportOnce } from '.
 
 const Footer: React.FC = () => {
   return (
-    <footer className="border-t border-white/10 bg-onyx pt-16 pb-8 px-3 md:px-6">
+    <footer className="border-t border-white/10 bg-onyx pt-16 pb-8 px-6 md:px-16">
       <div className="max-w-screen-2xl mx-auto">
 
         <motion.div

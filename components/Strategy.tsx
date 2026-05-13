@@ -41,7 +41,7 @@ const steps = [
 
 const Strategy: React.FC = () => {
   return (
-    <section id="strategy" className="py-32 px-3 md:px-6 max-w-screen-2xl mx-auto overflow-hidden">
+    <section id="strategy" className="py-32 px-6 md:px-16 max-w-screen-2xl mx-auto overflow-hidden">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

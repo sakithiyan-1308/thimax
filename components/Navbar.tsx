@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
         variants={fadeDown}
         initial="hidden"
         animate="show"
-        className="fixed top-0 left-0 right-0 z-50 bg-onyx/70 backdrop-blur-md border-b border-white/10 h-16 flex items-center justify-between px-3 md:px-6 transition-all duration-300"
+        className="fixed top-0 left-0 right-0 z-50 bg-onyx/70 backdrop-blur-md border-b border-white/10 h-16 flex items-center justify-between px-6 md:px-16 transition-all duration-300"
       >
         <motion.a
           href="#"

@@ -48,7 +48,7 @@ const verticals = [
 
 const Verticals: React.FC = () => {
   return (
-    <section id="verticals" className="py-20 px-3 md:px-6 max-w-screen-2xl mx-auto">
+    <section id="verticals" className="py-20 px-6 md:px-16 max-w-screen-2xl mx-auto">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

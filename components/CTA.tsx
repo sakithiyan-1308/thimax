@@ -5,7 +5,7 @@ import { fadeUp, popIn, staggerContainer, viewportOnce } from './animations';
 
 const CTA: React.FC = () => {
   return (
-    <section className="py-20 px-3 md:px-6 max-w-screen-xl mx-auto flex flex-col gap-12 text-center">
+    <section className="py-20 px-6 md:px-16 max-w-screen-xl mx-auto flex flex-col gap-12 text-center">
 
       <motion.div
         variants={staggerContainer}

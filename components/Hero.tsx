@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content Layer */}
-      <div className="relative z-10 max-w-screen-2xl mx-auto px-3 md:px-6 w-full grid grid-cols-1 lg:grid-cols-2 pointer-events-none">
+      <div className="relative z-10 max-w-screen-2xl mx-auto px-6 md:px-16 w-full grid grid-cols-1 lg:grid-cols-2 pointer-events-none">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
