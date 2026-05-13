@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -H \"Authorization: Bearer b408c6ebd16323371e7c5ea06bae3e07e67f45f59ce8a22a783b5763f760e211\" http://localhost:27123/vault/Products/)",
+      "Bash(curl -s -H \"Authorization: Bearer b408c6ebd16323371e7c5ea06bae3e07e67f45f59ce8a22a783b5763f760e211\" http://localhost:27123/vault/Projects/THIMAX.md)",
+      "Bash(curl -s -H \"Authorization: Bearer b408c6ebd16323371e7c5ea06bae3e07e67f45f59ce8a22a783b5763f760e211\" \"http://localhost:27123/search/simple/?query=thimax+website+design\")",
+      "Bash(curl -s -H \"Authorization: Bearer b408c6ebd16323371e7c5ea06bae3e07e67f45f59ce8a22a783b5763f760e211\" http://localhost:27123/vault/Plans/)",
+      "Bash(curl -s -H \"Authorization: Bearer b408c6ebd16323371e7c5ea06bae3e07e67f45f59ce8a22a783b5763f760e211\" http://localhost:27123/vault/Plans/THIMAX-Business-Plan.md)",
+      "Bash(dir \"c:\\\\Users\\\\sakit\\\\Downloads\\\\thimax-main\\\\thimax-main\")"
+    ]
+  }
+}

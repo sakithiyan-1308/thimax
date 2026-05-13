@@ -1,0 +1,137 @@
+/* 3D Container */
+.advantage-parent {
+    width: 100%;
+    max-width: 480px;
+    /* Increased slightly for better fit */
+    padding: 20px;
+    perspective: 1000px;
+    /* Essential for 3D effect */
+    margin: 0 auto;
+}
+
+/* The Card Surface */
+.advantage-card {
+    background: linear-gradient(145deg, #121212, #0a0a0a);
+    border: 1px solid #222;
+    border-radius: 20px;
+    padding: 40px 30px;
+    color: #ffffff;
+    transform-style: preserve-3d;
+    /* Allows children to float */
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* The Hover Tilt */
+.advantage-card:hover {
+    background-position: -100px 100px;
+    /* Adjust rotation degrees here */
+    transform: rotate3d(0.5, 1, 0, 20deg);
+    box-shadow: 0 50px 80px rgba(0, 0, 0, 0.8);
+    border-color: #333;
+}
+
+/* --- Floating Elements (Z-Index Layers) --- */
+
+/* Layer 1: Title */
+.advantage-card-title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    transform: translateZ(40px);
+    /* Floats 40px up */
+    transition: transform 0.5s;
+}
+
+/* Layer 2: Accent Line */
+.advantage-accent-line {
+    width: 60px;
+    height: 4px;
+    background-color: #8b5cf6;
+    /* accent-purple */
+    margin-bottom: 25px;
+    border-radius: 2px;
+    transform: translateZ(30px);
+    transition: transform 0.5s;
+    box-shadow: 0 0 15px #8b5cf6;
+}
+
+/* Layer 3: Body Text */
+.advantage-card-content {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #a1a1aa;
+    /* text-muted */
+    margin-bottom: 40px;
+    transform: translateZ(20px);
+    transition: transform 0.5s;
+}
+
+.advantage-card-content strong {
+    color: #ffffff;
+}
+
+.advantage-highlight-blue {
+    color: #3b82f6;
+    /* accent-blue */
+}
+
+/* Layer 4: Stats Container */
+.advantage-stats-container {
+    display: flex;
+    gap: 15px;
+    transform: translateZ(50px);
+    /* Floats highest */
+    transition: transform 0.5s;
+}
+
+/* Stats Boxes */
+.advantage-stat-box {
+    flex: 1;
+    padding: 15px;
+    border-radius: 12px;
+    background: #111;
+    border: 1px solid #333;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.advantage-stat-box.blue-glow {
+    border-color: #3b82f6;
+    background: rgba(59, 130, 246, 0.1);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+}
+
+.advantage-stat-number {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.advantage-stat-label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #a1a1aa;
+}
+
+.advantage-text-blue {
+    color: #3b82f6;
+}
+
+/* Extra Pop on Hover */
+.advantage-card:hover .advantage-card-title {
+    transform: translateZ(60px);
+}
+
+.advantage-card:hover .advantage-accent-line {
+    transform: translateZ(50px);
+}
+
+.advantage-card:hover .advantage-stats-container {
+    transform: translateZ(80px);
+}
